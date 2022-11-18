@@ -1,0 +1,272 @@
+/* &<<<1280px */
+@media (max-width: 1280px){
+    #navbar{
+        padding-left: 13%;
+        padding-right: 13%;
+        margin-bottom: 15px;
+        .navbar_1{
+            #nav_logo{
+                position: relative;
+                width: 110px;
+                bottom: -5px;
+            }
+            ul{
+                li{
+                    a{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .main{
+        padding-left: 18%;
+        padding-right: 18%;
+        .section_1{
+            a{margin-top: 25px;}
+            img{top: -65px;}
+        }
+        .section_2{
+            display: flex;
+            align-items: center;
+            img:not(#win_img){display: none;}
+            #win-a_text, #s-eq-f_text{display: none;}
+            #win_img{
+                /* position: static; */
+                width: 30%;
+                top: 20%;
+                right: 7%;
+            }
+            #text_buttons_section{
+                margin-top: 0;
+                left: 7%;
+            }
+        }
+        .section_4{
+            .advert_txt_inpt{
+                #gpyd_p{
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                #so_a_p{
+                    margin-bottom: 10px;
+                }
+                #crt-advrt_button{
+                    font-size: 13px;
+                    padding: 12px 20px;
+                }
+                
+            }
+            img{
+                position: absolute;
+                right: -20px;
+                height: 100%;
+                width: auto;
+            }
+        }
+        .section_8{
+            .car_brands{
+                #car_brands_cards{
+                    padding: 10px;
+                    height: 150px;
+                }
+            }
+        }
+        .section_9{
+            padding: 30px 200px;
+        }
+    }
+
+    .footer{
+        padding: 32px 100px 72px 100px;
+        .footer_items{
+            .footer_links{
+                margin: 0 40px 0 0;
+                width: 20%;
+            }
+        }
+    }
+}
+
+/* &<<<375px */
+@media(max-width: 375px){
+    /* body{width: 100vh;} */
+    #nav_hr{display: none;}
+    #navbar{
+        background-color: #F0F0F0;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+        .navbar_0{display: none;}
+        .navbar_1{
+            #nav_logo{width: 170px;}
+            ul{display: none;}
+            .saved_sign-in{display: none;}
+        }
+    }
+
+    .main{
+        .section_1, .section_2, .section_3, .section_4, .section_5, .section_6, .section_7, .section_8, .section_9{margin-bottom: 50px;}
+        padding-left: 8%;
+        padding-right: 8%;
+        .section_0{
+            background-color: #fff;
+            border-color: #fff;
+            #selection_section{
+                width: 100%;
+                margin: 0;
+            }
+        }
+        .section_1:not(h1 p a){padding: 0;}
+        .section_1{
+            text-align: center;
+            margin-top: 0;
+            height: 50vh;
+            h1{margin-top: 5%;}
+            img{
+                position: static;
+                width: 100%;
+                top: 0;
+            }
+        }
+        .section_2{
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+            height: auto;
+            padding: 20px 0;
+            img:not(#win_img){display: none;}
+            #win-a_text, #s-eq-f_text{display: none;}
+            #win_img{
+                position: static;
+                width: 85%;
+                margin-bottom: 4%;
+                /* right: 0; */
+            }
+            #text_buttons_section{
+                display: block;
+                /* top: 10%; */
+                position: static;
+                margin-top: 0;
+                left: 7%;
+            }
+        }
+        .section_4{
+            display: flex;
+            flex-direction: column-reverse;
+            height: 85vh;
+            .advert_txt_inpt{
+                width: 100%;
+                height: 55%;
+                display: block;
+                h1{
+                    font-size: 25px;
+                }
+                #gpyd_p{
+                    font-size: 15px;
+                }
+            }
+            img{
+                top: 0;
+                left: -30%;
+                height: 49%;
+                display: block;
+            }
+        }
+        .section_5{
+            padding: 30px 15px;
+            height: auto;
+            .nw_mdl_crs{
+                flex-wrap: wrap;
+                #audi,#volkswagen{margin-top: 2vh;}
+                #hyundai,#mercedes-benz,#audi,#volkswagen{
+                    width: 45%;
+                    height: 19vh;
+                    h1{text-align: center;}
+                }
+            }
+        }
+        .section_6{
+            padding: 30px 15px;
+            .buy_essent{
+                flex-wrap: wrap;
+                .buy_ess_box{
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    width: 47%;
+                    p{font-size: 14px;}
+                }
+            }
+        }
+        .section_7{
+            .lfat_cards{
+                flex-flow: column wrap;
+                #lfat-s_cards{
+                    width: 100%;
+                }
+            }
+        }
+        .section_8{
+            padding: 30px 15px;
+            .car_brands{
+                flex-wrap: wrap;
+                #car_brands_cards{
+                    margin-bottom: 5px;
+                    width: 48%;
+                    height: 20vh;
+                }
+            }
+        }
+        .section_9{
+            padding: 30px 15px;
+        }
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding: 32px 30px 72px 30px;
+        width: 375px;
+        img{
+            justify-content: center;
+            width: 50%;
+        }
+        .footer_items{
+            flex-direction: column;
+            .footer_links{
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-flow: column nowrap;
+                a{font-weight: bold;}
+                #m_cookies{
+                    font-weight: bold;
+                    padding: 5px 0 20px 0;
+                }
+            }
+            .pbqa{
+                width: 100%;
+                margin: 0 0 5vh 0;
+                h1{padding: 18px 15px;}
+            }
+            .feedb-btn_social-a_down-btn_copyr-p_addres-p{
+                width: 100%;
+                .social-a{
+                    width: 100%;
+                }
+                .down-btn{
+                    width: 100%;
+                }
+                .copyr-p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

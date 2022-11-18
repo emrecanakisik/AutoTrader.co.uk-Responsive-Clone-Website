@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media_queries.css">
+    <link rel="icon" href="./assets/favicon.png">
+    <script src="https://kit.fontawesome.com/63652c9910.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+<link rel="preload" href="https://c.atcdn.co.uk/fonts/ATVFabriga.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+<body>
+    <div id="navbar">
+        <div class="navbar_0">
+            <ul>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Vans</a></li>
+                <li><a href="#">Bikes</a></li>
+                <li><a href="#">Motorhomes</a></li>
+                <li><a href="#">Caravans</a></li>
+                <li><a href="#">Trucks</a></li>
+                <li><a href="#">Farm</a></li>
+                <li><a href="#">Plant</a></li>
+                <li><a href="#">Security advice</a></li>
+            </ul>
+        </div>
+        <div class="navbar_1">
+            <!-- <i class="fa-solid fa-car" id="car_icon"></i>
+            <h1>AutoTrader</h1> -->
+            <img id="nav_logo" src="./assets/logo.svg" alt="">
+            <ul>
+                <li><a href="#">Used cars</a></li>
+                <li><a href="#">New cars</a></li>
+                <li><a href="#">Sell your car</a></li>
+                <li><a href="#">Value your car</a></li>
+                <li><a href="#">Car reviews</a></li>
+                <li><a href="#">Car leasing</a></li>
+                <li><a href="#">Electric cars</a></li>
+                <li><a href="#">Buy a car online</a></li>
+            </ul>
+            <div class="saved_sign-in">
+                <div id="saved">
+                    <!-- <i class="fa-solid fa-heart"></i> -->
+                    <img src="./assets/heart_icon.svg" alt="">
+                    <h2>Saved</h2>
+                </div>
+                <div id="sign_in">
+                    <!-- <i class="fa-solid fa-circle-user"></i> -->
+                    <img src="./assets/sign-in_icon.svg" alt="">
+                    <h2>Sign in</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr id="nav_hr">
+    <div class="main">
+        <div class="section_0">
+            <div id="selection_section">
+                <h1>Find your perfect car</h1>
+                <input type="text" id="postcode" placeholder="Postcode">
+                <select name="" id="regions">
+                    <option value="National" selected='true'>National</option>
+                    <option value="Within 1 mile">Within 1 mile</option>
+                    <option value="Within 5 mile">Within 5 miles</option>
+                    <option value="Within 10 mile">Within 10 miles</option>
+                    <option value="Within 15 mile">Within 15 miles</option>
+                    <option value="Within 20 mile">Within 20 miles</option>
+                    <option value="Within 25 mile">Within 25 miles</option>
+                    <option value="Within 30 mile">Within 30 miles</option>
+                    <option value="Within 35 mile">Within 35 miles</option>
+                    <option value="Within 40 mile">Within 40 miles</option>
+                    <option value="Within 45 mile">Within 45 miles</option>
+                    <option value="Within 50 mile">Within 50 miles</option>
+                    <option value="Within 55 mile">Within 55 miles</option>
+                    <option value="Within 60 mile">Within 60 miles</option>
+                    <option value="Within 70 mile">Within 70 miles</option>
+                    <option value="Within 80 mile">Within 80 miles</option>
+                    <option value="Within 90 mile">Within 90 miles</option>
+                    <option value="Within 100 mile">Within 100 miles</option>
+                    <option value="Within 200 mile">Within 200 miles</option>
+                </select>
+                <select name="" id="brands">
+                    <option value="Make" selected="true">Make</option>
+                    <optgroup label="Most searched for">
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Jaguar">Jaguar</option>
+                        <option value="Land Rover">Land Rover</option>
+                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Porsche">Porsche</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Vauxhall">Vauxhall</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Volvo">Volvo</option>
+                        <optgroup label="All makes">
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Jaguar">Jaguar</option>
+                            <option value="Land Rover">Land Rover</option>
+                            <option value="Mercedes-Benz">Mercedes-Benz</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Porsche">Porsche</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Vauxhall">Vauxhall</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Volvo">Volvo</option>
+                        </optgroup>
+                </select>
+                <select name="" id="models">
+                    <option value="models" selected="true">Models</option>
+                    <option value="model_0">model_0</option>
+                    <option value="model_1">model_1</option>
+                    <option value="model_2">model_2</option>
+                    <option value="model_3">model_3</option>
+                    <option value="model_4">model_4</option>
+                    <option value="model_5">model_5</option>
+                    <option value="model_6">model_6</option>
+                    <option value="model_7">model_7</option>
+                    <option value="model_8">model_8</option>
+                    <option value="model_9">model_9</option>
+                </select>
+                <div class="cash_finance_box">
+                    <input type="radio" name="cash-finance" id="cash" checked="checked">
+                    <label for="cash" id="cash_lbl">Cash</label>
+                    <input type="radio" name="cash-finance" id="finance">
+                    <label for="finance" id="finance_lbl">Finance</label>
+                    <p id="finance_paragraph">Based on 48 month term, £1,000 deposit and 10,000 miles/year.</p>
+                </div>
+                <select name="" id="min_price">
+                    <option value="Min price" selected="selected">Min price</option>
+                    <option value="£1,000">£1,000</option>
+                    <option value="£5,000">£5,000</option>
+                    <option value="£10,000">£10,000</option>
+                    <option value="£20,000">£20,000</option>
+                    <option value="£30,000">£30,000</option>
+                    <option value="£40,000">£40,000</option>
+                    <option value="£50,000">£50,000</option>
+                    <option value="£60,000">£60,000</option>
+                    <option value="£70,000">£70,000</option>
+                    <option value="£80,000+">£80,000+</option>
+                </select>
+                <select name="" id="max_price">
+                    <option value="Max price" selected="selected">Max price</option>
+                    <option value="£1,000">£1,000</option>
+                    <option value="£5,000">£5,000</option>
+                    <option value="£10,000">£10,000</option>
+                    <option value="£20,000">£20,000</option>
+                    <option value="£30,000">£30,000</option>
+                    <option value="£40,000">£40,000</option>
+                    <option value="£50,000">£50,000</option>
+                    <option value="£60,000">£60,000</option>
+                    <option value="£70,000">£70,000</option>
+                    <option value="£80,000+">£80,000+</option>
+                </select>
+                <div class="submit_button">
+                    <input type="submit" id="submit" value="Search">
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    <label for="submit" id="submit_lbl"><i class="fa-solid fa-magnifying-glass"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Search</label>
+                </div>
+                <button id="rst_mr-optns_fltrs">Reset filters</button>
+                <button id="rst_mr-optns_fltrs" href="#">More options</button>
+            </div>
+        </div>
+        <div class="section_1">
+            <img src="./assets/istockphoto-1199863515-612x612.jpg" alt="#">
+            <h1>Do more from home</h1>
+            <p>Buy your car online with home delivery</p>
+            <a href="#">Find out more</a>
+            
+        </div>
+        <div class="section_2">
+            <img src="./assets/giveaway_bg.svg" id="giv_svg" alt="">
+            <img src="./assets/New-Electric-Car-Giveaway-Logo-2022.png" id="giv_img" alt="">
+            <div id="text_buttons_section">
+                <h1>We're giving away an electric car<br>every month!</h1>
+                <p>Enter for FREE for your chance to win a<br>Smart EQ ForFour worth over £19,000!</p>
+                <br>
+                <a href="#" id="enter_button">Enter now</a>
+                <br>
+                <a href="#" id="t_c_apply">T&Cs apply</a>
+            </div>
+            <img src="./assets/win_smart_eq_svg.svg" id="win_svg" alt="">
+            <h1 id="win-a_text"><i>WIN A</i></h1>
+            <h1 id="s-eq-f_text">SMART EQ<BR>FORFOUR</h1>
+            <img src="./assets/win_smart_eq_pic.png" alt="" id="win_img">
+        </div>
+        <div class="section_3">
+            <h1>Brand new car deals</h1>
+            <div class="cars_cards">
+                <!-- card00000 -->
+                <div class="cards cards_0">
+                    <img src="./assets/slider_cards/edafe20cd4ae43ffab777f1644e9540b.jpg" alt="">
+                    <div class="prcs">
+                        <p id="mrrp_prc">MRRP<br>£32,763</p>
+                        <p id="now_prc">Now<br><span id="now_span">£32,495</span></p>
+                        <p id="save_prc">Save<br><span id="save_span">£268</span></p>
+                    </div>
+                    <div class="hr_p_rd-mr">
+                        <hr>
+                        <p id="lorem_p">Lorem, ipsum dolor.</p>
+                        <a href="#">read more &nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                <!-- card11111 -->
+                <div class="cards cards_1">
+                    <img src="./assets/slider_cards/edafe20cd4ae43ffab777f1644e9540b.jpg" alt="">
+                    <div class="prcs">
+                        <p id="mrrp_prc">MRRP<br>£32,763</p>
+                        <p id="now_prc">Now<br><span id="now_span">£32,495</span></p>
+                        <p id="save_prc">Save<br><span id="save_span">£268</span></p>
+                    </div>
+                    <div class="hr_p_rd-mr">
+                        <hr>
+                        <p id="lorem_p">Lorem, ipsum dolor.</p>
+                        <a href="#">read more &nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                <!-- card22222 -->
+                <div class="cards cards_2">
+                    <img src="./assets/slider_cards/edafe20cd4ae43ffab777f1644e9540b.jpg" alt="">
+                    <div class="prcs">
+                        <p id="mrrp_prc">MRRP<br>£32,763</p>
+                        <p id="now_prc">Now<br><span id="now_span">£32,495</span></p>
+                        <p id="save_prc">Save<br><span id="save_span">£268</span></p>
+                    </div>
+                    <div class="hr_p_rd-mr">
+                        <hr>
+                        <p id="lorem_p">Lorem, ipsum dolor.</p>
+                        <a href="#">read more &nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                <!-- card33333 -->
+                <div class="cards cards_3">
+                    <img src="./assets/slider_cards/edafe20cd4ae43ffab777f1644e9540b.jpg" alt="">
+                    <div class="prcs">
+                        <p id="mrrp_prc">MRRP<br>£32,763</p>
+                        <p id="now_prc">Now<br><span id="now_span">£32,495</span></p>
+                        <p id="save_prc">Save<br><span id="save_span">£268</span></p>
+                    </div>
+                    <div class="hr_p_rd-mr">
+                        <hr>
+                        <p id="lorem_p">Lorem, ipsum dolor.</p>
+                        <a href="#">read more &nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+
+                <div class="cards cards_3">
+                    <img src="./assets/slider_cards/edafe20cd4ae43ffab777f1644e9540b.jpg" alt="">
+                    <div class="prcs">
+                        <p id="mrrp_prc">MRRP<br>£32,763</p>
+                        <p id="now_prc">Now<br><span id="now_span">£32,495</span></p>
+                        <p id="save_prc">Save<br><span id="save_span">£268</span></p>
+                    </div>
+                    <div class="hr_p_rd-mr">
+                        <hr>
+                        <p id="lorem_p">Lorem, ipsum dolor.</p>
+                        <a href="#">read more &nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="vw-mr-dls_button">View more deals&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+        <div class="section_4">
+            <div class="advert_txt_inpt">
+                <h1>Place an advert on Auto Trader</h1>
+                <p id="gpyd_p">Get the price you deserve</p>
+                <p id="so_a_p">See our: <span><a>advertising prices</a></span></p>
+                <div id="registration">
+                    <label for="reg" id="reg_lbl">Registration</label>
+                    <input type="text" id="reg" placeholder='e.g. LL58 JFK'>
+                </div>
+                <div id="current_mileage">
+                    <label for="cur_mil" id="cur_mil_lbl">Current mileage</label>
+                    <input type="text" name="" id="cur_mil" placeholder='e.g. 50000'>
+                </div>
+                <a href="#" id="crt-advrt_button">Create your advert</a><br>
+                <a href="#" id="mea_a">Manage existing adverts</a>
+            </div>
+            <img src="./assets/Where-should-a-laptop-sit.jpg" alt="">
+        </div>
+        <div class="section_5">
+            <h1>New model releases</h1>
+            <div class="nw_mdl_crs">
+                <div id="hyundai">
+                    <img src="./assets/new_model_releases/asset 1.png" alt="">
+                    <h1>HYUNDAI IONIQ 5</h1>
+                </div>
+                <div id="mercedes-benz">
+                    <img src="./assets/new_model_releases/asset 2.png" alt="">
+                    <h1>MERCEDES-BENZ EQA</h1>
+                </div>
+                <div id="audi">
+                    <img src="./assets/new_model_releases/asset 3.png" alt="">
+                    <h1>AUDI E-TRON GT</h1>
+                </div>
+                <div id="volkswagen">
+                    <img src="./assets/new_model_releases/asset 4.png" alt="">
+                    <h1>VOLKSWAGEN ID.4</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section_6">
+            <h1>Buying essentials</h1>
+            <div class="buy_essent">
+                <div class="buy_ess_box">
+                    <img src="./assets/buying_essentials/asset 5.svg" alt="">
+                    <h1>WHAT'S IT WORTH</h1>
+                    <P>Get a free valuation. Sell or part-exchange your car at the right price.</P>
+                </div>
+                <div class="buy_ess_box">
+                    <img src="./assets/buying_essentials/asset 6.svg" alt="">
+                    <h1>SECURITY ADVICE</h1>
+                    <P>Advice on how to buy and sell vehicles safely.</P>
+                </div>
+                <div class="buy_ess_box">
+                    <img src="./assets/buying_essentials/asset 7.svg" alt="">
+                    <h1>CAR FINANCE & LOANS</h1>
+                    <P>Discover how much you can borrow and find the right package for you.</P>
+                </div>
+                <div class="buy_ess_box">
+                    <img src="./assets/buying_essentials/asset 8.svg" alt="">
+                    <h1>CHECK A CAR'S HISTORY</h1>
+                    <P>Have complete peace of mind before you buy your next car.</P>
+                </div>
+            </div>
+        </div>
+        <div class="section_7">
+            <h1>The latest from Auto Trader</h1>
+            <div class="lfat_cards">
+                <div id="lfat-s_cards">
+                    <img src="./assets/The_latest_from_Auto_Trader.jpg" alt="">
+                    <div class="pad_dv">
+                        <h1>DS AUTOMOBILES DS 4 Hatchback (2021 - ) review</h1>
+                        <p>DS4 impresses with its style and comfort, while the plug-in hybrid version offers both efficiency and strong performance</p>
+                        <div class="review_date">
+                            <h2 style="margin-right: 5px;">expertreview</h2>
+                            <h2>|</h2>
+                            <h2 style="margin-left: 5px;">10 days ago</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="lfat-s_cards">
+                    <img src="./assets/The_latest_from_Auto_Trader.jpg" alt="">
+                    <div class="pad_dv">
+                        <h1>DS AUTOMOBILES DS 4 Hatchback (2021 - ) review</h1>
+                        <p>DS4 impresses with its style and comfort, while the plug-in hybrid version offers both efficiency and strong performance</p>
+                        <div class="review_date">
+                            <h2 style="margin-right: 5px;">expertreview</h2>
+                            <h2>|</h2>
+                            <h2 style="margin-left: 5px;">10 days ago</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="lfat-s_cards">
+                    <img src="./assets/The_latest_from_Auto_Trader.jpg" alt="">
+                    <div class="pad_dv">
+                        <h1>DS AUTOMOBILES DS 4 Hatchback (2021 - ) review</h1>
+                        <p>DS4 impresses with its style and comfort, while the plug-in hybrid version offers both efficiency and strong performance</p>
+                        <div class="review_date">
+                            <h2 style="margin-right: 5px;">expertreview</h2>
+                            <h2>|</h2>
+                            <h2 style="margin-left: 5px;">10 days ago</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="lfat-s_cards">
+                    <img src="./assets/The_latest_from_Auto_Trader.jpg" alt="">
+                    <div class="pad_dv">
+                        <h1>DS AUTOMOBILES DS 4 Hatchback (2021 - ) review</h1>
+                        <p>DS4 impresses with its style and comfort, while the plug-in hybrid version offers both efficiency and strong performance</p>
+                        <div class="review_date">
+                            <h2 style="margin-right: 5px;">expertreview</h2>
+                            <h2>|</h2>
+                            <h2 style="margin-left: 5px;">10 days ago</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="lfat-s_cards">
+                    <img src="./assets/The_latest_from_Auto_Trader.jpg" alt="">
+                    <div class="pad_dv">
+                        <h1>DS AUTOMOBILES DS 4 Hatchback (2021 - ) review</h1>
+                        <p>DS4 impresses with its style and comfort, while the plug-in hybrid version offers both efficiency and strong performance</p>
+                        <div class="review_date">
+                            <h2 style="margin-right: 5px;">expertreview</h2>
+                            <h2>|</h2>
+                            <h2 style="margin-left: 5px;">10 days ago</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="lfat-s_cards">
+                    <img src="./assets/The_latest_from_Auto_Trader.jpg" alt="">
+                    <div class="pad_dv">
+                        <h1>DS AUTOMOBILES DS 4 Hatchback (2021 - ) review</h1>
+                        <p>DS4 impresses with its style and comfort, while the plug-in hybrid version offers both efficiency and strong performance</p>
+                        <div class="review_date">
+                            <h2 style="margin-right: 5px;">expertreview</h2>
+                            <h2>|</h2>
+                            <h2 style="margin-left: 5px;">10 days ago</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_8">
+            <h1>Browse by brand</h1>
+            <div class="car_brands">
+                <div id="car_brands_cards">
+                    <img src="./assets/browse_by_brand/audi.jpg" alt="">
+                    <h1>AUDI</h1>
+                </div>
+                <div id="car_brands_cards">
+                    <img src="./assets/browse_by_brand/bmw.jpg" alt="">
+                    <h1>BMW</h1>
+                </div>
+                <div id="car_brands_cards">
+                    <img src="./assets/browse_by_brand/ford.jpg" alt="">
+                    <h1>FORD</h1>
+                </div>
+                <div id="car_brands_cards">
+                    <img src="./assets/browse_by_brand/mercedes.jpg" alt="">
+                    <h1>MERCEDES-BENZ</h1>
+                </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-plus"></i> &nbsp; Show all brands</a>
+        </div>
+        <div class="section_9">
+            <h1>Follow us on social media</h1>
+            <h2>All the latest news for you</h2>
+            <div class="social_media_items">
+                <div class="social_media_icons" id="facebook">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <h1>Facebook</h1>
+                </div>
+                <div class="social_media_icons" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                    <h1>Twitter</h1>
+                </div>
+                <div class="social_media_icons" id="youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                    <h1>Youtube</h1>
+                </div>
+                <div class="social_media_icons" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <h1>Instagram</h1>
+                </div>
+                <div class="social_media_icons" id="tiktok">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <h1>TikTok</h1>
+                </div>
+            </div>
+        </div>
+        <div class="backtotop">
+            <a href=""><i class="fa-solid fa-angle-up"></i></a>
+            <h1>Back to top</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <img src="./assets/logo.svg" alt="">
+        <div class="footer_items">
+            <div class="footer_links">
+                <a href="#">Security advice</a>
+                <a href="#">Contact us</a>
+                <a href="#">About Auto Trader</a>
+                <a href="#">Careers</a>
+                <a href="#">Investor information</a>
+                <a href="#">Privacy policies and terms</a>
+                <a href="#">Selling terms & conditions</a>
+                <a href="#">Brand advertising on Auto Trader</a>
+                <a href="#">Carzone.ie</a>
+                <a href="" id="m_cookies">Manage cookies</a>
+            </div>
+            <div class="pbqa">
+                <h1><i class="fa-solid fa-plus"></i>&nbsp;Products & services</h1>
+                <h1><i class="fa-solid fa-plus"></i>&nbsp;Buying advice</h1>
+                <h1><i class="fa-solid fa-plus"></i>&nbsp;Quick search</h1>
+                <h1 id="pbqa_h1_bottom"><i class="fa-solid fa-plus"></i>&nbsp;Auto Trader for dealers</h1>
+            </div>
+            <div class="feedb-btn_social-a_down-btn_copyr-p_addres-p">
+                <div class="feedb-btn">
+                    <p>Help us improve our website</p>
+                    <a href="#">Send feedback</a>
+                </div>
+                <div class="social-a">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="down-btn">
+                    <img src="./assets/badgets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="">
+                    <img src="./assets/badgets/Google_Play_Store_badge_EN.svg" alt="">
+                </div>
+                <div class="copyr-p">
+                    <p>Copyright © Auto Trader Limited 2022.</p>
+                    <p>Auto Trader Limited is authorised and regulated by the Financial Conduct Authority in relation to consumer credit and insurance mediation activities. Our FCA firm reference number is 735711.Auto Trader Limited is a credit broker and not a lender. Representative finance examples are for illustrative purposes only. Finance is subject to status. Terms and conditions apply. Available to 18s and over. UK residents only. Auto Trader receives a fee from retailers advertising finance and may receive a commission from commercial partners for introducing customers to finance products. These fees and commissions do not influence the amount a customer pays.</p>
+                </div>
+                <div class="address-p">
+                    <p id="address-p_1">Registered office and headquarters</p>
+                    <p>4th Floor</p>
+                    <p>1 Tony Wilson Place</p>
+                    <p>Manchester</p>
+                    <p>M15 4FN</p>
+                    <p>United Kingdom</p>
+                    <p>Registered number: 03909628</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
